@@ -9,19 +9,19 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full h-[100vh] px-12 py-16 border-b-[1px] border-b-black"
+      className="w-full min-h-[100vh] p-12  border-b-[1px] border-b-black"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-14">
-        <NavLink>
+        <NavLink to={"diktantlar"}>
           <Card title="Diktantlar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink>
+        <NavLink to="esselar">
           <Card title="Esselar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink>
+        <NavLink to="bayonlar">
           <Card title="Bayonlar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink>
+        <NavLink to="">
           <Card title="Baholash me'zoni" icon={<HiPencilAlt />} />
         </NavLink>
         <NavLink>

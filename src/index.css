@@ -27,3 +27,8 @@
 .scrollbar-hide::-webkit-scrollbar{
     display: none;
 }
+.items{
+background: #fff;
+border-bottom: 2px solid black;
+color: red;
+}
