@@ -26,7 +26,7 @@ const Features = () => {
         </NavLink>
         <NavLink>
           <Card
-            title="Yozilishi qiyin so'zlar imlosi"
+            title="Faol so'zlar imlo lug'ati"
             icon={<MdOutlineMenuBook />}
           />
         </NavLink>

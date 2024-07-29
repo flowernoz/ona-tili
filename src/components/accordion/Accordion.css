@@ -1,0 +1,50 @@
+.accordion {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .items {
+    border-bottom: 4px solid #1d1b1b;
+  }
+  
+  .accordion__heading {
+    background-color: #4f5353;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .accordion__heading:hover {
+    background-color: #000;
+  }
+  
+  .accordion__button {
+    font-size: 1.2rem;
+    color: white; 
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .accordion__button:focus {
+    outline: none;
+  }
+  
+  .accordion__panel {
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    padding-left: 30px;
+    animation: fadein 0.5s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

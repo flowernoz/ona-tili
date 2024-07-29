@@ -6,10 +6,21 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
+import "./Accordion.css"
+
 function AccordionFunc() {
   let items = [
-    { heading: "Accordion Item #1", content: "..." },
-    { heading: "Accordion Item #2", content: "..." },
+    { heading: "1. Yangi hovli", content: "..." },
+    { heading: "2. Yaxshi niyat", content: "..." },
+    { heading: "3. Obod yurt istiqboli", content: "..." },
+    { heading: "4. Ikki dangasa", content: "..." },
+    { heading: "5. Qovun sayli", content: "..." },
+    { heading: "6. Buyuk ipak yo'li", content: "..." },
+    { heading: "7. Muallim siymosi", content: "..." },
+    { heading: "8. Ona qirg'ovul", content: "..." },
+    { heading: "9. Do'st tanlash haqida", content: "..." },
+    { heading: "10. To'y", content: "..." },
+
   ];
 
   return (

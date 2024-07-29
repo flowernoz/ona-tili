@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5% 0;
+}
+
+.header a{
+    font-size: 2vw;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+}
+
+.header .icon{
+    font-size: 28px;
+}
