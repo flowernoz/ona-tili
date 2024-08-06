@@ -1,18 +1,21 @@
 import React from 'react';
 import { FaUserAlt } from "react-icons/fa";
-import "./Header.css"
-import {Link} from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
+  const navigate = useNavigate();
 
-
+  const handleIconClick = () => {
+    navigate('/login');
+  };
 
   return (
     <div className='header'>
       <Link to={"/"}>
         Logo
       </Link>
-      <FaUserAlt className='icon'/>
+      <FaUserAlt className='icon' onClick={handleIconClick} />
     </div>
   );
 }
