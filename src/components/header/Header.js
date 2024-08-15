@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <div className='header'>
+    <div className='header bg-bodyColor'>
       <Link to={"/"}>
         Logo
       </Link>

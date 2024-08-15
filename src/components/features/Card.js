@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 
-const Card = ({ title,  icon }) => {
+const Card = ({ title, icon }) => {
   return (
     <div className="w-100 px-12 h-60 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100 group">
       <div className="h-72 overflow-y-hidden">
