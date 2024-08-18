@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 import React, { useState } from 'react';
 import { GoPerson } from 'react-icons/go';
 import { FaLock } from "react-icons/fa";
 import './Login.css'
 
+
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +18,7 @@ function Login({ onLogin }) {
     onLogin(username, password);
     setUsername('');
     setPassword('');
+    navigate("/admin");
   };
 
   return (

@@ -2,8 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Router from "./Routes";
 import { useState } from "react";
 import Login from "./components/login/Login";
-import Admin from "./components/admin/AdminPage";
 import useScrollToTop from "./hooks/scrollToTop";
+import AdminPage from "./components/admin/AdminPage";
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const scrollToTop = useScrollToTop();
@@ -23,8 +24,9 @@ function App() {
         <Routes>
           <Route
             path="/Login"
-            element={isLoggedIn ? <Admin /> : <Login onLogin={handleLogin} />}
-          />
+            element={isLoggedIn ? <AdminPage /> : <Login onLogin={handleLogin} />}
+            />
+            console.log(isLoggedIn);
         </Routes>
       </div>
     </div>

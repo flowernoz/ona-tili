@@ -22,7 +22,7 @@ const Features = () => {
           <Card title="Bayonlar" icon={<GiNotebook />} />
         </NavLink>
         <NavLink to="">
-          <Card title="Baholash me'zoni" icon={<HiPencilAlt />} />
+          <Card title="Mashqlar" icon={<HiPencilAlt />} />
         </NavLink>
         <NavLink>
           <Card
@@ -31,7 +31,7 @@ const Features = () => {
           />
         </NavLink>
         <NavLink>
-          <Card title="Ayrim so'zlar izohi" icon={<MdOutlineMenuBook />} />
+          <Card title="X yoki H" icon={<MdOutlineMenuBook />} />
         </NavLink>
       </div>
     </section>
