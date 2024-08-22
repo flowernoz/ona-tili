@@ -4,6 +4,7 @@ import Bayon from "./pages/bayon/Bayon";
 import Diktant from "./pages/diktant/Diktant";
 import Esse from "./pages/esse/Esse";
 import Header from "./components/header/Header";
+import Letters from "./pages/h-x";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
         <Route path="/diktantlar" element={<Diktant />} />
         <Route path="/esselar" element={<Esse />} />
         <Route path="/bayonlar" element={<Bayon />} />
+        <Route path="/harflar" element={<Letters />} />
       </Routes>
     </div>
   );

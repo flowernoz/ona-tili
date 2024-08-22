@@ -30,7 +30,7 @@ const Features = () => {
             icon={<MdOutlineMenuBook />}
           />
         </NavLink>
-        <NavLink>
+        <NavLink to={"/harflar"}>
           <Card title="X yoki H" icon={<MdOutlineMenuBook />} />
         </NavLink>
       </div>

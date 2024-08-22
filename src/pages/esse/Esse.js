@@ -7,8 +7,8 @@ function Esse() {
   let [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("/data/allData")
-      .then((res) => setData(res.data?.innerData[0].esse))
+      .get("/essay/allData")
+      .then((res) => setData(res?.data?.innerData))
       .catch((err) => console.error(err));
   }, []);
   return (

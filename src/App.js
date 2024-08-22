@@ -26,7 +26,6 @@ function App() {
             path="/Login"
             element={isLoggedIn ? <AdminPage /> : <Login onLogin={handleLogin} />}
             />
-            console.log(isLoggedIn);
         </Routes>
       </div>
     </div>

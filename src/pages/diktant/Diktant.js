@@ -7,7 +7,7 @@ function Diktant() {
   let [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("/data/allData")
+      .get("/dictant/allData")
       .then((res) => setData(res.data?.innerData[0].dictant))
       .catch((err) => console.error(err));
   }, []);

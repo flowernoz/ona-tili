@@ -8,7 +8,6 @@ const AddDiktantForm = ({ onAdd }) => {
     e.preventDefault();
 
     const newDiktant = {
-      id: Date.now(), 
       title,
       content,
     };

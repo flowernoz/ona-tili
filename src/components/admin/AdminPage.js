@@ -9,10 +9,6 @@ function SectionOne() {
     setItems([]);
   }, []);
 
-  // const updateItem = (id) => {
-    
-  // };
-
   // const deleteItem = (id) => {
     
   // };
@@ -34,7 +30,7 @@ function Dashboard() {
   return (
     <div style={styles.dashboardContainer}>
       <h1 style={styles.header}>Admin Dashboard</h1>
-      <div style={styles.sectionsContainer}>
+      <div style={styles.sectionContainer}>
         <SectionOne />
         {/* Other sections */}
         <AddForm onAdd={handleAddDiktant} />

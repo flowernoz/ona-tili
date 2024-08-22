@@ -7,8 +7,8 @@ function Bayon() {
   let [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("/data/allData")
-      .then((res) => setData(res.data?.innerData[0].bayon))
+      .get("/bayon/allData")
+      .then((res) => setData(res?.data?.innerData))
       .catch((err) => console.error(err));
   }, []);
   return (
