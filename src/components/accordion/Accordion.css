@@ -42,12 +42,16 @@
 
 .accordion__panel {
   padding: 15px;
-  background-color: #4f5353;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding-left: 30px;
   animation: fadein 0.5s;
 }
-
+.savol {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 550;
+}
 @keyframes fadein {
   from {
     opacity: 0;

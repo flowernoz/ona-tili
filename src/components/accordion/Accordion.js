@@ -19,11 +19,16 @@ function AccordionFunc({ data }) {
         <AccordionItem className="items" key={index}>
           <AccordionItemHeading onClick={() => setActiveIndex(index)}>
             <AccordionItemButton>
-              {item?.title}{" "}
+              <div>
+                {index + 1}. {item?.title || "Mashq"}{" "}
+              </div>
               {index === activeIndex ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </AccordionItemButton>
           </AccordionItemHeading>
-          <AccordionItemPanel>{item?.text}</AccordionItemPanel>
+          <AccordionItemPanel>
+            {item.savol && <p className="savol">{item.savol}</p>}{" "}
+            {item?.text || <img src={item.img} />}
+          </AccordionItemPanel>
         </AccordionItem>
       ))}
     </Accordion>

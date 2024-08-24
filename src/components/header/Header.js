@@ -12,11 +12,9 @@ function Header() {
   };
 
   return (
-    <div className='header bg-bodyColor'>
-      <Link to={"/"}>
-        Logo
-      </Link>
-      <FaUserAlt className='icon' onClick={handleIconClick} />
+    <div className="header bg-bodyColor">
+      <Link to={"/"}>Logo</Link>
+      <FaUserAlt className="icon" onClick={handleIconClick} />
     </div>
   );
 }

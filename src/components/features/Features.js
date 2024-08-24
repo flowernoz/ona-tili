@@ -12,16 +12,16 @@ const Features = () => {
       className="w-full min-h-[100vh] p-12  border-b-[1px] border-b-black"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-14">
-        <NavLink to={"diktantlar"}>
+        <NavLink to={"/diktantlar"}>
           <Card title="Diktantlar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink to="esselar">
+        <NavLink to={"esselar"}>
           <Card title="Esselar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink to="bayonlar">
+        <NavLink to={"bayonlar"}>
           <Card title="Bayonlar" icon={<GiNotebook />} />
         </NavLink>
-        <NavLink to="">
+        <NavLink to={"/mashqlar"}>
           <Card title="Mashqlar" icon={<HiPencilAlt />} />
         </NavLink>
         <NavLink>
