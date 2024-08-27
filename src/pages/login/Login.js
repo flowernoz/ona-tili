@@ -1,31 +1,32 @@
-import { useNavigate } from "react-router-dom";
-import React, { useState } from 'react';
-import { GoPerson } from 'react-icons/go';
+import { json, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { GoPerson } from "react-icons/go";
 import { FaLock } from "react-icons/fa";
-import './Login.css'
+import "./Login.css";
 
-
-function Login({ onLogin }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate(); 
+function Login() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin(username, password);
-    setUsername('');
-    setPassword('');
+    let admin = {
+      username,
+      password
+    }
+    localStorage.setItem("owner", JSON.stringify(admin));
     navigate("/admin");
   };
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <div className="main">
         <h1>Admin Page</h1>
         <br />
         <form onSubmit={handleSubmit}>
           <div className="input-card">
-            <GoPerson className='icoun' />
+            <GoPerson className="icoun" />
             <input
               type="text"
               value={username}
@@ -34,9 +35,10 @@ function Login({ onLogin }) {
               autoComplete="off"
             />
           </div>
-          <br /><br />
+          <br />
+          <br />
           <div className="input-card">
-            <FaLock className='icoun' />
+            <FaLock className="icoun" />
             <input
               type="password"
               value={password}
@@ -51,6 +53,6 @@ function Login({ onLogin }) {
       </div>
     </div>
   );
-};
+}
 
 export default Login;

@@ -27,7 +27,8 @@ function AccordionFunc({ data }) {
           </AccordionItemHeading>
           <AccordionItemPanel>
             {item.savol && <p className="savol">{item.savol}</p>}{" "}
-            {item?.text || <img src={item.img} />}
+            {item?.text || <img src={item.img} />}{" "}
+            {item.feature && <p className="bold"> {item.feature}</p>}
           </AccordionItemPanel>
         </AccordionItem>
       ))}

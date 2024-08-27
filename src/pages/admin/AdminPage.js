@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import AddForm from '../addForm/AddForm';
+import AddForm from '../../components/addForm/AddForm';
 
 function SectionOne() {
   const [items, setItems] = useState([]);

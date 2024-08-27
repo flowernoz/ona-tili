@@ -24,7 +24,7 @@ const Features = () => {
         <NavLink to={"/mashqlar"}>
           <Card title="Mashqlar" icon={<HiPencilAlt />} />
         </NavLink>
-        <NavLink>
+        <NavLink to={"/faol-so'zlar"}>
           <Card
             title="Faol so'zlar imlo lug'ati"
             icon={<MdOutlineMenuBook />}

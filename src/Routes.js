@@ -6,6 +6,9 @@ import Esse from "./pages/esse/Esse";
 import Header from "./components/header/Header";
 import Letters from "./pages/h-x";
 import Mashq from "./pages/mashq";
+import Login from "./pages/login/Login";
+import AdminPage from "./pages/admin/AdminPage";
+import Faol from "./pages/faol";
 
 function Router() {
   return (
@@ -18,6 +21,9 @@ function Router() {
         <Route path="/bayonlar" element={<Bayon />} />
         <Route path="/harflar" element={<Letters />} />
         <Route path="/mashqlar" element={<Mashq />} />
+        <Route path="/faol-so'zlar" element={<Faol />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </div>
   );

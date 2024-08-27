@@ -52,6 +52,9 @@
   line-height: 1.5;
   font-weight: 550;
 }
+.bold{
+  font-weight: bold;
+}
 @keyframes fadein {
   from {
     opacity: 0;
