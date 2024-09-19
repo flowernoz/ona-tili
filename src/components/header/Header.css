@@ -19,3 +19,13 @@
   font-size: 28px;
   background: none;
 }
+
+.header .item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .item i{
+  font-size: 18px;
+}

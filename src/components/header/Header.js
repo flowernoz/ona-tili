@@ -13,8 +13,11 @@ function Header() {
 
   return (
     <div className="header bg-bodyColor">
-      <Link to={"/"}>Logo</Link>
-      <FaUserAlt className="icon" onClick={handleIconClick} />
+      <Link to={"/"}>Savodxon</Link>
+     <div className='item'>
+      <i>Muallif: Isaqova Gulzoda</i>
+     <FaUserAlt className="icon" onClick={handleIconClick} />
+     </div>
     </div>
   );
 }
