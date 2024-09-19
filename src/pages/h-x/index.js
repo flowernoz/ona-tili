@@ -13,11 +13,14 @@ import img13 from "../../assets/img13.png";
 import img14 from "../../assets/img14.png";
 import img15 from "../../assets/img15.png";
 import img16 from "../../assets/img16.png";
-import './style.css'
+import "./style.css";
 function Letters() {
   return (
     <div className="w-full min-h-[100vh]  p-12 bg-white  border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-14">
-      <img src={img1} alt="image1" />
+      <div>
+        <h1 className='h'>«H» HARFI ISHTIROKIDA YOZILADIGAN SO'ZLAR</h1>
+        <img src={img1} alt="image1" />
+      </div>
       <img src={img2} alt="" />
       <img src={img3} alt="" />
       <img src={img4} alt="" />
