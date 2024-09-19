@@ -1,23 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AddForm from '../../components/addForm/AddForm';
 
 function SectionOne() {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    setItems([]);
-  }, []);
-
-  // const deleteItem = (id) => {
-    
-  // };
-
-  return (
-    <div>
-      
-    </div>
-  );
+  return <div></div>;
 }
 
 function Dashboard() {
@@ -32,7 +18,6 @@ function Dashboard() {
       <h1 style={styles.header}>Admin Dashboard</h1>
       <div style={styles.sectionContainer}>
         <SectionOne />
-        {/* Other sections */}
         <AddForm onAdd={handleAddDiktant} />
         <ul style={styles.diktantList}>
           {diktants.map((diktant) => (
@@ -56,41 +41,53 @@ function AdminPage() {
   return (
     <div>
       <Dashboard />
-      <button onClick={goBack}>Ortga qaytish</button>
+      <button onClick={goBack} style={styles.backButton}>Ortga qaytish</button>
     </div>
   );
 }
 
 const styles = {
   dashboardContainer: {
-    height: '87vh',
+    height: '75vh',
     padding: '30px',
     marginTop: '20px',
-    backgroundColor: '#000', // Black background
-    color: '#000', // White text
-    boxShadow: '0px 0px 10px 0 lightgray'
+    backgroundColor: '#ffffff', // White background
+    color: '#0057a1', // Dark blue text
+    boxShadow: '0px 0px 10px 0 lightgray',
   },
   header: {
     textAlign: 'center',
     marginBottom: '30px',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+    color: 'dodgerblue', // Dark blue
+    fontSize: '24px',
+    fontFamily: 'Poppins, sans-serif',
   },
-  sectionContainer: {
-    padding: '20px',
-    backgroundColor: 'lightgrey',
-    borderRadius: '8px',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
-  },
+  // sectionContainer: {
+  //   padding: '20px',
+  //   // backgroundColor: '#e0f7ff', // Light blue background for sections
+  //   borderRadius: '8px',
+  //   boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+  // },
   diktantList: {
     marginTop: '20px',
   },
-  diktantItem: {
-    padding: '10px',
-    backgroundColor: 'black',
-    border: '2px solid #333',
-    color: 'white',
-    borderRadius: '4px',
-    marginBottom: '10px',
+  // diktantItem: {
+  //   padding: '10px',
+  //   backgroundColor: '#ffffff', // White background for items
+  //   border: '2px solid #0057a1', // Dark blue border
+  //   color: '#0057a1', // Dark blue text
+  //   borderRadius: '4px',
+  //   marginBottom: '10px',
+  // },
+  backButton: {
+    marginTop: '20px',
+    padding: '10px 20px',
+    backgroundColor: '#0057a1', // Dark blue button
+    color: '#ffffff', // White text
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontFamily: 'Poppins, sans-serif',
   },
 };
 

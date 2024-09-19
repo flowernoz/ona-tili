@@ -47,7 +47,7 @@ const AddDiktantForm = ({ onAdd }) => {
 const styles = {
   formContainer: {
     padding: '20px',
-    backgroundColor: 'grey',
+    backgroundColor: 'dodgerblue',
     borderRadius: '8px',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
   },
@@ -57,7 +57,7 @@ const styles = {
   label: {
     display: 'block',
     marginBottom: '5px',
-    color: '#333',
+    color: '#fff',
     fontWeight: '900',
     letterSpacing: '2px'
   },
@@ -76,9 +76,9 @@ const styles = {
   },
   submitButton: {
     padding: '10px 15px',
-    backgroundColor: 'gray',
-    boxShadow: '0 0 10px 0 lightgray',
-    color: '#333',
+    backgroundColor: '#fff',
+    boxShadow: '0 0 5px 0 lightblue',
+    color: 'dodgerblue',
     border: 'none',
     borderRadius: '4px',
     cursor: 'pointer',
